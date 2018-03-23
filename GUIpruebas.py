@@ -10,9 +10,9 @@ class menu():
         self.imgTitle = Label(self.objWindow, image = self.fileImgTitle)
         self.imgTitle.pack()
 
-        self.mainMenu()
 
-        self.objWindow.mainloop()
+
+
     def mainMenu(self):
         self.addSerieBottom = Button(self.objWindow, text = "Agregar Serie", command = self.redimencionar)
         self.addSerieBottom.pack()
@@ -23,6 +23,7 @@ class menu():
         self.loadDataBaseBottom = Button(self.objWindow, text = "Cargar una base de datos")
         self.loadDataBaseBottom.pack()
 
+        self.objWindow.mainloop()
 
     def redimencionar(self):
         self.objWindow.geometry("600x420")
@@ -33,3 +34,4 @@ class menu():
 
 
 objMenu = menu()
+objMenu.mainMenu()
